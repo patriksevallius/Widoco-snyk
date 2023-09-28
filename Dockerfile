@@ -9,7 +9,7 @@ RUN mvn package && \
     mv ./JAR/widoco*.jar ./JAR/widoco.jar
 
 # ----
-FROM openjdk:18-slim
+FROM openjdk:22-ea-15-jdk-slim-bullseye
 
 WORKDIR /usr/local/widoco
 
